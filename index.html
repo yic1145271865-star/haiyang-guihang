@@ -1,1 +1,30 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#123d48"><title>海样归航 · 实验室安全协作挑战</title><link rel="stylesheet" href="style.css?v=2"></head><body><header><a class="brand" href="#" aria-label="海样归航首页"><svg width="36" height="32" viewBox="0 0 36 32" aria-hidden="true"><path d="M3 10 Q10 3 17 10 T33 10 M3 19 Q10 12 17 19 T33 19 M9 27H27" fill="none" stroke="currentColor" stroke-width="3"/></svg><b>海样归航</b></a><span class="subtitle">海洋科研实验室 · 安全协作挑战</span><button class="quiet" id="staff">工作人员</button></header><main id="app"></main><div id="toast" role="status" aria-live="polite"></div><dialog id="question"></dialog><dialog id="tools"></dialog><script type="module" src="app.js?v=2"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d313c">
+<title>海样归航 · 实验室安全协作挑战</title>
+<link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="海样归航首页">
+    <span class="brand-mark" aria-hidden="true"><svg width="36" height="32" viewBox="0 0 36 32"><path d="M3 10 Q10 3 17 10 T33 10 M3 19 Q10 12 17 19 T33 19 M9 27H27" fill="none" stroke="currentColor" stroke-width="3"/></svg></span>
+    <span class="brand-text"><b>海样归航</b><span class="brand-sub">实验室安全协作挑战</span></span>
+  </a>
+  <ol class="steps" aria-label="互动流程">
+    <li class="step" data-step="draw"><span class="step-dot">1</span><span class="step-name">抽题</span></li>
+    <li class="step" data-step="intro"><span class="step-dot">2</span><span class="step-name">认识实验</span></li>
+    <li class="step" data-step="inspect"><span class="step-dot">3</span><span class="step-name">安全巡检</span></li>
+    <li class="step" data-step="incident"><span class="step-dot">4</span><span class="step-name">现场情况</span></li>
+  </ol>
+  <button class="quiet staff-btn" id="staff" type="button">工作人员</button>
+</header>
+<main id="app"></main>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="question"></dialog>
+<dialog id="tools"></dialog>
+<script type="module" src="app.js?v=5"></script>
+</body>
+</html>
