@@ -1610,3 +1610,14 @@ body.playing .toolbar>p.pan-hint[hidden]{display:none !important}
 
 /* === V7 · 终检收口：消除移动端装饰动效导致的 1–3px 瞬时横向溢出 === */
 html,body{overflow-x:clip}
+
+/* 巡检位置默认隐藏，按需显示提示；保留键盘焦点和已整改标记。 */
+.hotspot:not(.done):not(.hinted) .hotspot-ring,
+.hotspot:not(.done):not(.hinted):hover .hotspot-ring {
+  opacity: 0;
+  animation: none;
+  box-shadow: none;
+}
+.hotspot:not(.done):not(.hinted):hover { background: transparent; box-shadow: none; }
+.hotspot.hinted .hotspot-ring { opacity: 1; animation: none; }
+.hotspot:not(.done):focus-visible .hotspot-ring { opacity: 1; animation: none; }
